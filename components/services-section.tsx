@@ -4,7 +4,6 @@ export default function ServicesSection() {
         <h2 className="text-[24px] md:text-[30px] text-black mb-12 tracking-wide px-12 pb-4 border-b-1 border-b-[#D9D9D9] animate-zoomout">ABOUT OUR PRODUCTS & SERVICES</h2>
         <div className="px-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Complimentary Installation */}
             <div className="space-y-4">
                 <h3 className="text-[24px] font-light text-gray-900 tracking-wide">
                 COMPLIMENTARY
@@ -17,7 +16,6 @@ export default function ServicesSection() {
                 </p>
             </div>
 
-            {/* Made-to-Measure Architecture */}
             <div className="space-y-4">
                 <h3 className="text-[24px] font-light text-black tracking-wide">
                 MADE-TO-MEASURE

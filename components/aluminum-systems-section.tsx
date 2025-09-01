@@ -39,22 +39,19 @@ export default function AluminumSystemsSection() {
           </p>
         </div>
 
-        {/* Systems Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {systems.map((system, index) => (
             <div key={index} className="group cursor-pointer">
-              {/* Image Container */}
-              <div className=" bg-gray-100 aspect-[4/3] mb-4">
+              <div className=" aspect-[4/3] mb-4">
                 <Image
                   src={system.image || "/placeholder.svg"}
                   alt={system.title}
                   width={440}
                   height={337}
-                  className="w-[400px] h-[400px] transition-transform duration-300 group-hover:scale-105"
+                  className="w-[440px] h-[337px] transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
-              {/* Title */}
               <h3 className="text-[24px] font-light text-black tracking-wide">{system.title}</h3>
             </div>
           ))}
