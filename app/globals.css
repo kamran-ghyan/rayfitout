@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* Mont Font Face Definitions - Debug Version */
+@font-face {
+  font-family: 'Mont';
+  src: url('/fonts/Mont-Regular.woff2') format('woff2'),
+       url('/fonts/Mont-Regular.woff') format('woff'),
+       url('/fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/fonts/Mont-Bold.woff2') format('woff2'),
+       url('/fonts/Mont-Bold.woff') format('woff'),
+       url('/fonts/Mont-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Alternative: Try with exact font file names from dafont */
+@font-face {
+  font-family: 'Mont';
+  src: url('/fonts/mont.woff2') format('woff2'),
+       url('/fonts/mont.woff') format('woff'),
+       url('/fonts/mont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Mont', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Mont', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.test-mont {
+  font-family: 'Mont', Arial, sans-serif !important;
+  font-weight: 400;
+}
+
+@keyframes zoomin {
+  0% { transform: scale(1.2); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes zoomout {
+  0% { transform: scale(1.2); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes zoomleft {
+  0% { transform: translateX(-100%) scale(0.8); opacity: 0; }
+  100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+@keyframes zoomright {
+  0% { transform: translateX(100%) scale(0.8); opacity: 0; }
+  100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+/* Utility classes */
+.animate-zoomin {
+  animation: zoomin 1s ease-out forwards;
+}
+
+.animate-zoomout {
+  animation: zoomout 1s ease-out forwards;
+}
+
+.animate-zoomleft {
+  animation: zoomleft 1s ease-out forwards;
+}
+
+.animate-zoomright {
+  animation: zoomright 1s ease-out forwards;
+}
