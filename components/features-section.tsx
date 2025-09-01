@@ -2,17 +2,17 @@ import Image from "next/image"
 
 export default function FeaturesSection() {
   return (
-    <section className="bg-white py-[140px] px-12 ">
+    <section className="bg-white py-[140px] px-12">
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="relative group overflow-hidden">
-            <div className="aspect-[4/3] relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+          <div className="relative group overflow-hidden w-[430px] h-[537px]">
+            <div className="w-full h-full relative">
               <Image
                 src="/modern_profiles.png"
                 alt="Modern aluminum door profiles with sleek black finish"
                 fill
                 className="object-cover object-left"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="430px"
               />
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -22,14 +22,14 @@ export default function FeaturesSection() {
               </div>
             </div>
           </div>
-          <div className="relative group overflow-hidden">
-            <div className="aspect-[4/3] relative">
+          <div className="relative group overflow-hidden w-[430px] h-[537px]">
+            <div className="w-full h-full relative">
               <Image
                 src="/integeration.png"
                 alt="Integrated walk-in closet system with glass panels and lighting"
                 fill
-                className="width=[430] height=[574]"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover"
+                sizes="430px"
               />
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -37,14 +37,14 @@ export default function FeaturesSection() {
               </div>
             </div>
           </div>
-          <div className="relative group overflow-hidden">
-            <div className="aspect-[4/3] relative">
+          <div className="relative group overflow-hidden w-[430px] h-[537px]">
+            <div className="w-full h-full relative">
               <Image
                 src="/modularity.png"
                 alt="Modular wardrobe system with organized storage solutions"
                 fill
                 className="object-cover object-right"
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="430px"
               />
               <div className="absolute inset-0 bg-black/20" />
               <div className="absolute inset-0 flex items-center justify-center">
